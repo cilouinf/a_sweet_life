@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sweet Life existe depuis début 2016. Sweet Life est une boulangerie et pâtisserie artisanale gérées par des passionnés du pain et des desserts en tout genre. Sweet Life offre également un service de dégustation sur place.">
+    <meta name="author" content="Josette Doe 2018">
+    <title>Sweet Life</title>
+    <link rel="stylesheet" href="assets/css/fa-svg-with-js.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="main-container">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="Sweet Life Logo">
+            </div>
+            <div class="burger">
+                <i class="fas fa-bars fa-4x"></i>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-value="home">Accueil</a></li>
+                <li><a href="#about" data-value="about">À Propos</a></li>
+                <li><a href="#services" data-value="services">Nos Services</a></li>
+                <li><a href="#gallery" data-value="gallery">Galerie</a></li>
+                <li><a href="#events" data-value="events">Événements</a></li>
+                <li><a href="#contact" data-value="contact">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- END HEADER -->
+
+    <!-- SLIDER -->
+
+    <section class="slider-wrap" id="home">
+        <h1>A Sweet Life</h1>
+        <p>Boulangerie &amp; Pâtisserie Artisanale</p>
+        <div id="slider">
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+        </div>
+
+        <div id="bullet1" class="bullets"></div>
+        <div id="bullet2" class="bullets"></div>
+        <div id="bullet3" class="bullets"></div>
+        <div id="bullet4" class="bullets"></div>
+    </section>
+
+    <!-- END SLIDER -->
+
+    <!-- ABOUT -->
+
+    <section id="about">
+        <h2>A Propos de Nous</h2>
+        <div class="main-container">
+            <div>
+                <p>A Sweet Life a vu le jour début 2016.<br><br>Passionnés par le pain et les pâtisseries en tout genre depuis notre plus jeune âge, nous avons décidé de nous lancer dans une activité qui nous permettrait de partager notre savoir-faire avec ceux et celles qui aiment découvrir de nouveaux goûts, principalement sucrés, dans une ambiance détendue et chaleureuse.</p>
+            </div>
+            <div class="images-container">
+                <figure id="img1" class="item">
+                    <p><img src="assets/img/about1.jpg" alt="Max Antoine"></p>
+                    <figcaption><p>Maxine Antoine, co-fondatrice de Sweet Life</p></figcaption>
+                </figure>
+                <figure id="img2" class="item">
+                    <p><img src="assets/img/about2.jpg" alt="Etienne Leroy"></p>
+                    <figcaption><p>Etienne Leroy, co-fondateur de Sweet Life, et une partie de l'équipe pâtisserie</p></figcaption>
+                </figure>
+                <figure id="img3" class="item">
+                    <p><img src="assets/img/about3.jpg" alt="Equipe"></p>
+                    <figcaption><p>L'équipe boulangerie de Sweet Life</p></figcaption>
+                </figure>
+                <figure id="img4" class="item">
+                    <p><img src="assets/img/about4.jpg" alt="Equipe"></p>
+                    <figcaption><p>L'équipe salon de Sweet Life</p></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- END ABOUT -->
+
+    <!-- SERVICES -->
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="main-container">
+            <div class="bakery-container">
+                <h3>Boulangerie</h3>
+                <figure class="image">
+                    <img src="assets/img/services-boulangerie.jpeg" alt="Présentation de pains">
+                </figure>
+                <div class="button">
+                    <p><a id="bakery-more-btn">En Savoir Plus</a></p>
+                </div>
+                <div id="modal-bakery" class="modal">
+                    <div class="modal-header">
+                        <span id="close-bakery-btn" class="close-btn">&times;</span>
+                        <h2>Boulangerie</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>Nous préparons toute une gamme de pains spéciaux. De plus, si vous avez une envie particulière, vous pouvez nous en faire part via notre <a href="#contact" target="_blank">formulaire de contact</a> ou en personne et nous ferons tout ce qui nous est possible de faire pour la combler.</p>
+                        </div>
+                        <div class="modal-gallery">
+                            <h3>Le pain de la semaine</h3>
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-bakery-modal-1.jpg" alt="Pain Figues Noisettes"></p>
+                                    <figcaption>
+                                        <p>Pain aux figues et noisettes</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="top">
+                            <img src="assets/img/modal-arrow-top.png" alt="modal arrow top">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pastry-container">
+                <h3>Pâtisserie</h3>
+                <figure class="image">
+                    <img src="assets/img/services-patisserie.jpeg" alt="Présentation de gâteau">
+                </figure>
+                <div class="button">
+                    <p><a id="pastry-more-btn">En Savoir Plus</a></p>
+                </div>
+                <div id="modal-pastry" class="modal">
+                    <div class="modal-header">
+                        <span id="close-pastry-btn" class="close-btn">&times;</span>
+                        <h2>Pâtisserie</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>Les pâtisseries sont notre grande spécialité et nous vous en proposons une variété assez importante. Tout comme pour la boulangerie, si vous avez une envie particulière, n'hésitez pas à nous en faire part via notre <a href="#contact" target="_blank">formulaire de contact</a> ou en personne et nous nous ferons un plaisir de vous faire plaisir !</p>
+                        </div>
+                        <div class="modal-gallery">
+                            <h3>La pâtisserie de la semaine</h3>
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-pastry-modal-1.jpeg" alt="Fondant chocolat fruit des bois"></p>
+                                    <figcaption>
+                                        <p>Fondant au chocolat nappé de fruits des bois et de crème fraîche</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="top">
+                            <img src="assets/img/modal-arrow-top.png" alt="modal arrow top">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="salon-container">
+                <h3>Salon</h3>
+                <figure class="image">
+                    <img src="assets/img/services-salon.jpeg" alt="Présentation du salon de dégustation">
+                </figure>
+                <div class="button">
+                    <p><a id="salon-more-btn">En Savoir Plus</a></p>
+                </div>
+                <div id="modal-salon" class="modal">
+                    <div class="modal-header">
+                        <span id="close-salon-btn" class="close-btn">&times;</span>
+                        <h2>Salon de Dégustation</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p>Venez découvrir nos pâtisseries ainsi que nos différentes formules de petits déjeuners dans notre salon de dégustation. Nous vous attendons afin de pouvoir vous faire passer un agréable moment gourmand !</p>
+                        </div>
+                        <div class="modal-gallery">
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-salon-modal-1.jpg" alt="Dégustation"></p>
+                                </figure>
+                            </div>
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-salon-modal-2.jpeg" alt="Dégustation"></p>
+                                </figure>
+                            </div>
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-salon-modal-3.jpg" alt="Dégustation"></p>
+                                </figure>
+                            </div>
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-salon-modal-4.jpg" alt="Dégustation"></p>
+                                </figure>
+                            </div>
+                            <div class="products">
+                                <figure>
+                                    <p><img src="assets/img/gallery-salon-modal-5.jpg" alt="Dégustation"></p>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="top">
+                            <img src="assets/img/modal-arrow-top.png" alt="modal arrow top">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END SERVICES -->
+
+    <!-- GALLERY -->
+
+    <section id="gallery">
+        <h2>Portfolio</h2>
+        <div class="main-container">
+            <nav>
+                <ul>
+                    <li><a class=button id="gallery-show-all">Tout</a></li>
+                    <li><a class=button id="gallery-show-bakery">Boulangerie</a></li>
+                    <li><a class=button id="gallery-show-pastry">Pâtisserie</a></li>
+                    <li><a class=button id="gallery-show-salon">Salon</a></li>
+                    <li><a class=button id="gallery-show-divers">Divers</a></li>
+                </ul>
+            </nav>
+            <figure class="images-container">
+                <img src="assets/img/gallery-bakery-1.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-2.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-3.jpg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-4.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-5.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-6.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-7.jpg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-8.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-9.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-10.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-11.jpg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-12.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-13.jpg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-14.jpeg" alt="photo-boulangerie" class="bakery all">
+                <img src="assets/img/gallery-bakery-15.jpeg" alt="photo-boulangerie" class="bakery all">
+
+                <img src="assets/img/gallery-pastry-1.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-2.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-3.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-4.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-5.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-6.jpg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-7.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-8.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-9.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-10.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-11.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-12.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-13.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-14.jpeg" alt="photo-pâtisserie" class="pastry all">
+                <img src="assets/img/gallery-pastry-15.jpeg" alt="photo-pâtisserie" class="pastry all">
+
+                <img src="assets/img/gallery-salon-1.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-2.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-3.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-4.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-5.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-6.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-7.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-8.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-9.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-10.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-11.jpg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-12.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-13.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-14.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-15.jpeg" alt="photo-salon" class="salon all">
+                <img src="assets/img/gallery-salon-16.jpeg" alt="photo-salon" class="salon all">
+
+                <img src="assets/img/gallery-divers-1.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-2.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-3.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-4.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-5.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-6.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-7.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-8.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-9.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-10.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-11.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-12.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-13.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-14.jpeg" alt="photo-divers" class="divers all">
+                <img src="assets/img/gallery-divers-15.jpeg" alt="photo-divers" class="divers all">
+            </figure>
+        </div>
+        <figure class="main-img-modal" id="modal-gallery">
+            <img src="assets/img/gallery-bakery-1.jpeg" alt="current image" id="current">
+        </figure>
+    </section>
+
+    <!-- END GALLERY -->
+
+    <!-- EVENTS -->
+
+    <section id="events">
+        <h2>Prochains événements</h2>
+        <div class="main-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Événement</th>
+                        <th>Lieu</th>
+                        <th>Détails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><time datetime="2018-05-07">07/05</time></td>
+                        <td>Goûter Découverte</td>
+                        <td>Namur</td>
+                        <td><span id="btn-event1">Voir</span></td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2018-05-17">17/05</time></td>
+                        <td>Atelier Boulangerie</td>
+                        <td>Assesse</td>
+                        <td><span id="btn-event2">Voir</span></td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2018-06-22">22/06</time></td>
+                        <td>P'artisserie</td>
+                        <td>Dinant</td>
+                        <td><span id="btn-event3">Voir</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article id="modal-event1" class="event modal">
+                <div class="modal-header">
+                    <span id="close-event1-btn" class="close-btn">&times;</span>
+                    <h3>Goûter Découverte</h3>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <img src="assets/img/events-event-1.jpeg" alt="Goûter Découverte 2017">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quand</td>
+                            <td>Le <time datetime="2018-05-07T15:30">07 Mai 2018 à 15h30</time></td>
+                        </tr>
+                        <tr>
+                            <td>Où</td>
+                            <td><address>Rue Bonne-Voie, 5 5000 Namur</address></td>
+                        </tr>
+                        <tr>
+                            <td>Prix</td>
+                            <td>25 &euro; / personne, 15 &euro; pour les enfants.<br>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="top">
+                        <img src="assets/img/modal-arrow-top.png" alt="modal arrow top">
+                    </div>
+                </div>
+            </article>
+
+
+            <article id="modal-event2" class="event modal">
+                <div class="modal-header">
+                    <span id="close-event2-btn" class="close-btn">&times;</span>
+                    <h3>Atelier Boulangerie</h3>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <img src="assets/img/events-event-2.jpeg" alt="Atelier Boulangerie 2017">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quand</td>
+                            <td>Le <time datetime="2018-05-17T08:30">17 Mai 2018 à partir de 08h30</time></td>
+                        </tr>
+                        <tr>
+                            <td>Où</td>
+                            <td><address>Rue des Arts, 47 5500 Assesse</address></td>
+                        </tr>
+                        <tr>
+                            <td>Prix</td>
+                            <td>10 &euro; / personne<br>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="top">
+                        <img src="assets/img/modal-arrow-top.png" alt="modal arrow top">
+                    </div>
+                </div>
+            </article>
+
+            <article id="modal-event3" class="event modal">
+                <div class="modal-header">
+                    <span id="close-event3-btn" class="close-btn">&times;</span>
+                    <h3>P'Artisserie</h3>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <img src="assets/img/events-event-3.jpeg" alt="Atelier Boulangerie 2017">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quand</td>
+                            <td>Le <time datetime="2018-06-22T08:30">22 Juin 2018 à partir de 08h30</time></td>
+                        </tr>
+                        <tr>
+                            <td>Où</td>
+                            <td><address>Avenue des Remparts, 171 5500 Dinant</address></td>
+                        </tr>
+                        <tr>
+                            <td>Prix</td>
+                            <td>15 &euro; / personne<br>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="top">
+                        <img src="assets/img/modal-arrow-top.png" alt="modal arrow top">
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- END EVENTS -->
+
+    <!-- NEWSLETTER -->
+
+    <section id="newsletter">
+        <h2>Newsletter</h2>
+        <div class="main-container">
+            <div>
+                <p>Pour être informé de nos actualités, événements et promotions du moment, inscrivez-vous à notre newsletter !</p>
+            </div>
+            <div class="form-container">
+                <form>
+                    <input type="email" placeholder="Votre Email" required>
+                    <button>S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- END NEWSLETTER -->
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+        <h2>Nous Contacter</h2>
+        <div class="main-container">
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Votre Nom" required>
+                    <input type="email" placeholder="Votre Email" required>
+                    <textarea cols="30" rows="10" placeholder="Votre Message" maxlength="4096" required></textarea>
+                    <button>Envoyer</button>
+                </form>
+            </div>
+            <figure id="map" class="map-container">
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdzy4gNk1_NPFX79asGRD8q6zMSsPI2AQ&callback=initMap"></script>
+            </figure>
+            <div class="address">
+                <p>Place de l'Ecole des Cadets,6</p>
+                <p>5000 NAMUR</p>
+            </div>
+            <div class="horaire-container">
+                <table>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>Fermé</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>07h00 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>07h00 - 19h00</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>Fermé</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>07h00 - 17h30</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>08h00 - 18h00</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>08h00 - 18h00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="main-container">
+            <div class="social">
+                <div>
+                    <p>Suivez-nous sur </p>
+                </div>
+                <figure>
+                    <img src="assets/img/social_media_icons_facebook.png" alt="Facebook">
+                    <img src="assets/img/social_media_icons_instagram.png" alt="Instagram">
+                    <img src="assets/img/social_media_icons_twitter.png" alt="Twitter">
+                </figure>
+            </div>
+            <div>
+                <p>Sweet Life &copy; 2018</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+
+    <!-- JS SCRIPTS -->
+
+    <script src="assets/js/fontawesome-all.min.js"></script>
+    <script src="assets/js/burger.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scroll.js"></script>
+
+    <!-- END JS SCRIPTS -->
+
+</body>
+</html>
